@@ -125,6 +125,8 @@ style.innerHTML = `
   fill: white !important;
   opacity: 1;
   transition: opacity 500ms !important;
+.ZPasfd {
+  border-color: transparent;
 }
 
 /* Red buttons */
