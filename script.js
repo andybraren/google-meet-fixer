@@ -51,12 +51,19 @@ style.innerHTML = `
 .rG0ybd {
 	opacity: 1;
 	transform: translateY(0);
-	transition: opacity 100ms;
-	background-color: black;
+  transition: opacity 100ms;
+  transition: background-color 250ms !important;
 	background-color: #fff0;
 	box-shadow: none;
 }
 
+.rG0ybd:hover {
+  background-color: #00000061;
+}
+
+.rG0ybd:hover {
+  --opacity-inactive: .8;
+}
 /* Name */
 .lMHHZ {
 	/* transform: translateY(-88px); */
