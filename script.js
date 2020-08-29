@@ -47,6 +47,11 @@ document.onkeyup = function (e) {
 const style = document.createElement('style');
 style.innerHTML = `
 
+:root {
+  --opacity-full: 1;
+  --opacity-inactive: .5;
+}
+
 /* Footer bar */
 .rG0ybd {
 	opacity: 1;
@@ -101,12 +106,12 @@ style.innerHTML = `
 /* Meeting Name and Caret */
 .gSlHI .SQHmX > * {
   color: white;
-  opacity: .5;
-  transition: opacity 500ms;
+  opacity: var(--opacity-inactive);
+  transition: opacity 250ms;
 }
 .gSlHI:hover .SQHmX > * {
   opacity: 1;
-  transition: opacity 500ms;
+  transition: opacity 250ms;
 }
 
 /* Video and Mic buttons */
@@ -118,13 +123,14 @@ style.innerHTML = `
 }
 .bkbMM { /* Icon */
   fill: white !important;
-  opacity: .5;
-  transition: opacity 500ms !important;
+  opacity: var(--opacity-inactive);
+  transition: opacity 250ms !important;
 }
 .A00RE:hover .bkbMM {
   fill: white !important;
   opacity: 1;
-  transition: opacity 500ms !important;
+  transition: opacity 250ms !important;
+}
 .ZPasfd {
   border-color: transparent;
 }
@@ -138,12 +144,12 @@ style.innerHTML = `
 /* Captions */
 .n8i9t > * {
   color: white;
-  opacity: .5;
-  transition: opacity 500ms;
+  opacity: var(--opacity-inactive);
+  transition: opacity 250ms;
 }
 .n8i9t:hover > * {
   opacity: 1;
-  transition: opacity 500ms;
+  transition: opacity 250ms;
 }
 
 /* Present */
@@ -152,7 +158,7 @@ style.innerHTML = `
 }
 .XMjwIe:hover > * {
   opacity: 1;
-  transition: opacity 500ms;
+  transition: opacity 250ms;
 }
 .o9fq9d { /* Icon */
   color: white;
@@ -161,12 +167,12 @@ style.innerHTML = `
 /* Kebab */
 .NlWrkb {
   color: white;
-  opacity: .5;
-  transition: opacity 500ms;
+  opacity: var(--opacity-inactive);
+  transition: opacity 250ms;
 }
 .NlWrkb:hover {
   opacity: 1;
-  transition: opacity 500ms;
+  transition: opacity 250ms;
 }
 `;
 document.head.appendChild(style);
