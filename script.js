@@ -64,6 +64,34 @@ style.innerHTML = `
 .rG0ybd:hover {
   --opacity-inactive: .8;
 }
+
+/* Top bar */
+.lvE3se, .NzPR9b {
+  background-color: #fff0;
+  transition: background-color 250ms !important;
+  box-shadow: none;
+}
+.lvE3se:hover {
+  background-color: #00000061;
+}
+
+/* Divider line */
+.qO3Z3c {
+  opacity: .5;
+}
+
+/* Top Bar Icons */
+.NzPR9b .NPEfkd {
+  color: white;
+  opacity: var(--opacity-inactive);
+  transition: opacity 250ms !important;
+}
+.NzPR9b .NPEfkd:hover {
+  opacity: var(--opacity-full);
+  transition: opacity 250ms !important;
+}
+
+
 /* Name */
 .lMHHZ {
 	/* transform: translateY(-88px); */
