@@ -5,13 +5,7 @@ if (document.querySelector('.rG0ybd') !== null) {
 function run() {
 
 // Find the mic button
-if (document.querySelector('[aria-label="Turn off microphone (⌘ + d)"]') !== null) {
-  var micButton = document.querySelector('[aria-label="Turn off microphone (⌘ + d)"]');
-} else {
-  var micButton = document.querySelector('[aria-label="Turn on microphone (⌘ + d)"]');
-}
-
-var micButton = document.querySelector('[aria-label="Turn off microphone (⌘ + d)"]') || document.querySelector('[aria-label="Turn on microphone (⌘ + d)"]')
+var micButton = document.querySelector('[aria-label="Turn off microphone (⌘ + d)"]') || document.querySelector('[aria-label="Turn on microphone (⌘ + d)"]') || document.querySelector('[aria-label="Turn off microphone (ctrl + d)"]') || document.querySelector('[aria-label="Turn on microphone (ctrl + d)"]')
 
 // Mute the mic to start
 /*
