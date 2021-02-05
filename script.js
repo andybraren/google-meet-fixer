@@ -96,7 +96,6 @@ style.innerHTML = `
   transition: opacity 250ms !important;
 }
 
-
 /* Name */
 .lMHHZ {
 	/* transform: translateY(-88px); */
@@ -141,6 +140,17 @@ style.innerHTML = `
   background-color: rgba(217, 48, 37, .6);
 }
 
+/* Raise hand */
+.x4JyWe > * {
+  color: white;
+  opacity: var(--opacity-inactive);
+  transition: opacity 250ms;
+}
+.x4JyWe:hover > * {
+  opacity: 1;
+  transition: opacity 250ms;
+}
+
 /* Captions */
 .n8i9t > * {
   color: white;
@@ -175,6 +185,7 @@ style.innerHTML = `
   transition: opacity 250ms;
 }
 `;
+
 document.head.appendChild(style);
 
 }
