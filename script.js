@@ -1,3 +1,14 @@
+// Extension: Watch for DOM changes and check for the call UI to appear
+let observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (document.querySelector('.rG0ybd') !== null) {
+      run();
+    }
+  })
+});
+observer.observe(document.body, {childList: true});
+
+// Bookmarklet: Run when clicked
 if (document.querySelector('.rG0ybd') !== null) {
   run();
 }
@@ -37,7 +48,7 @@ document.onkeyup = function (e) {
   }
 };
 
-// Add custom styling to footer
+// Add custom styling
 const style = document.createElement('style');
 style.innerHTML = `
 
