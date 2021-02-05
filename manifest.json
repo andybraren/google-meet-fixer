@@ -1,0 +1,13 @@
+ {
+  "name": "Fix Meet",
+  "description": "Functional and styling improvements to Google Meet.",
+  "version": "1.4",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "js": ["script.js"],
+    "matches": ["https://meet.google.com/*"]
+  }],
+  "background": {
+    "service_worker": "script.js"
+  }
+}
